@@ -1,0 +1,51 @@
+https://code.visualstudio.com/download
+https://nodejs.org/en/
+https://nodejs.org/en/
+
+
+Basic JavaScript
+NPM
+/////////////////////
+Basic NodeJS(in built)(Os,file,http)
+NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+Third Party Api (Weather Api)
+Node-Es6(.babel)
+Redis  > 6379
+MongoDb Basic >27017  (local/cloud)
+Api with NodeJS(Rest)
+DashBoard(Crud)
+Testing
+Login/Logout(JWT)
+Oauth(with github)
+ImageUpload
+Oauth(with google)
+Github
+--Deployment---
+Nginx
+Pm2
+Docker
+Heroku
+OO_NodeJs
+NodeJs with postgres
+GraphQl API
+Chatapp
+Email With Node(sendgird)(https://app.sendgrid.com/)
+FIREBASE(0PTIONAL)
+--------NOT---------
+React/Angular
+Html/css/jquery
+
+/////////////////////
+
+nodeJs
+>>>>>>>>>>
+Async
+Single Thread 
+Non Blocking I/O 
+
+chrome v8
+machine code
+open source
+
+
+npm > node package manager
