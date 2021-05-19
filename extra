@@ -5,7 +5,6 @@ https://nodejs.org/en/
 
 Basic JavaScript
 NPM
-/////////////////////
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
@@ -49,3 +48,70 @@ open source
 
 
 npm > node package manager
+
+
+///////
+JSON > JavaScript Object Notation
+[
+    {
+        name:"John",
+        class:"Node"
+    },
+    {
+        name:"Amit",
+        class:"React"
+    }
+]
+
+package.json 
+> Meta Data (name,version,description)
+> Packages 
+> script (start,test)
+> This is the first file app 
+
+///////////////////
+Step to generate Package.json 
+//////////////////////
+* Nodejs must be install in your system
+> Go Inside the folder using cmd 
+> type npm init 
+> Answer all questions
+> type "yes"
+
+/////////////////////
+Local Dependency  > local to the folder 
+Global Dependency > local to the system
+Dev Dependency    > Use only at the time of development 
+
+
+///////////////////
+Step to install Local Dependency
+//////////////////////
+* Nodejs must be install in your system
+> Go Inside the folder using cmd 
+> npm i package name / npm i package name  --save
+
+
+
+///////////////////
+Step to install Dev Dependency
+//////////////////////
+* Nodejs must be install in your system
+> Go Inside the folder using cmd 
+> npm i package name  --save-dev 
+
+///////////////////
+Step to install Global Dependency
+//////////////////////
+> install in the system directly 
+> will not add on package.json 
+> we need admin access to install 
+> only packages help to generate or run app will go global
+
+#Window
+> open cmd as admin 
+> npm i -g packagename
+
+#mac/linux
+> open terminal
+> sudo npm i -g packagename
