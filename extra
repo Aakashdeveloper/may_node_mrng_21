@@ -116,3 +116,6 @@ Step to install Global Dependency
 #mac/linux
 > open terminal
 > sudo npm i -g packagename
+
+
+npm init -y 
