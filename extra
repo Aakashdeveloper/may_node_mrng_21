@@ -119,3 +119,11 @@ Step to install Global Dependency
 
 
 npm init -y 
+
+C > Create
+R > Read
+U > Update
+D > Delete 
+
+///////
+npm i -g nodemon

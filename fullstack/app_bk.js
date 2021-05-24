@@ -1,8 +1,6 @@
 var express = require('express');
 var app = express();
 var port = 9000;
-var hotelRouter = express.Router();
-var cityRouter = express.Router();
 
 var hotels = [{
 	"id" : "6360",
@@ -210,28 +208,22 @@ app.get('/',function(req,res){
     res.send("Hi from express")
 })
 
-cityRouter.route('/')
-    .get(function(req,res){
-        res.send(city)
-    })
+app.get('/city',function(req,res){
+    res.send(city)
+})
 
-cityRouter.route('/details')
-    .get(function(req,res){
-        res.send('city details')
-    })
+app.get('/details',function(req,res){
+    res.send('cityDetails')
+})
 
-hotelRouter.route('/')
-    .get(function(req,res){
-        res.send(hotels)
-    })
+app.get('/hotels',function(req,res){
+    res.send(hotels)
+})
 
-hotelRouter.route('/details')
-    .get(function(req,res){
-        res.send('hotel details')
-    })
+app.get('/details',function(req,res){
+    res.send('hotelDetails')
+})
 
-app.use('/hotel',hotelRouter)
-app.use('/city',cityRouter)
 
 app.listen(port,function(err){
     if(err) throw err;
