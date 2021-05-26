@@ -127,3 +127,7 @@ D > Delete
 
 ///////
 npm i -g nodemon
+
+
+Dev > QA > Prod 
+npm i dotenv
