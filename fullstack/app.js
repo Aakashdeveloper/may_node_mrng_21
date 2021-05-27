@@ -7,7 +7,13 @@ var fs = require('fs');
 var chalk = require('chalk');
 var port = process.env.PORT || 9000;
 
-var hotelRouter = require('./src/router/hotelRoutes');
+var menu = [
+    {link:'/',name:'Home'},
+    {link:'/hotel',name:'Hotels'},
+    {link:'/city',name:'City'}
+]
+
+var hotelRouter = require('./src/router/hotelRoutes')(menu);
 var cityRouter = require('./src/router/cityRoutes');
 
 //static File Path
@@ -17,11 +23,12 @@ app.set('views','./src/views');
 //view engine
 app.set('view engine','ejs');
 
-app.use(morgan('tiny'))
+app.use(morgan('dev'))
+app.use(morgan('dev', {stream: fs.createWriteStream('./app.log', {flags:'a'})}))
 
 app.get('/',function(req,res){
     //res.send("Hi from express")
-    res.render('index',{title:'Home Page'})
+    res.render('index',{title:'Home Page',menu:menu})
 })
 
 app.use('/hotel',hotelRouter);

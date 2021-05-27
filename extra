@@ -131,3 +131,15 @@ npm i -g nodemon
 
 Dev > QA > Prod 
 npm i dotenv
+
+
+
+function add(a,b){
+    return a+b
+}
+
+
+add(1,2)
+
+params (/1)
+queryParams (?name=john)

@@ -1,6 +1,13 @@
 var express = require('express')
 var hotelRouter = express.Router();
 
+var menu = [
+    {link:'/',name:'Home'},
+    {link:'/hotel',name:'Hotels'},
+    {link:'/city',name:'City'},
+    {link:'/city',name:'Admin'}
+]
+
 var hotels = [{
 	"id" : "6360",
 	"name" : "Gulab",
@@ -154,24 +161,15 @@ var hotels = [{
 	"rating_text" : "Good"
 }]
 
-function router(menu){
+hotelRouter.route('/')
+.get(function(req,res){
+	//res.send(hotels)
+	res.render('hotel',{title:'Hotels Page',hotelData:hotels,menu})
+})
 
-	hotelRouter.route('/')
-	.get(function(req,res){
-		//res.send(hotels)
-		res.render('hotel',{title:'Hotels Page',hotelData:hotels,menu})
-	})
-	
-	hotelRouter.route('/details/:id')
-	.get(function(req,res){
-		//var id = req.params.id
-		var {id} = req.params
-		//res.send('hotel details')
-		res.render('hotelDetails',{title:`Hotel Details Page for ${id}`,menu})
-	})
+hotelRouter.route('/details')
+.get(function(req,res){
+    res.send('hotel details')
+})
 
-	return hotelRouter
-}
-
-
-module.exports = router
+module.exports = hotelRouter
