@@ -8,12 +8,13 @@ Basic JavaScript
 NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+//////////////////////////////
 Third Party Api (Weather Api)
-Node-Es6(.babel)
 Redis  > 6379
+Node-Es6(.babel)
 MongoDb Basic >27017  (local/cloud)
-Api with NodeJS(Rest)
-DashBoard(Crud)
+Api with NodeJS(Rest)>1
+DashBoard(Crud) > 2
 Testing
 Login/Logout(JWT)
 Oauth(with github)
@@ -25,6 +26,7 @@ Nginx
 Pm2
 Docker
 Heroku
+---------------------
 OO_NodeJs
 NodeJs with postgres
 GraphQl API
@@ -143,3 +145,64 @@ add(1,2)
 
 params (/1)
 queryParams (?name=john)
+
+
+
+
+NoSQL > Not a sql 
+unstructured 
+schemaless
+
+Sno | Hindi | English | Computer
+1   | 80    |         |
+2   |       | 80      |
+3   |80     |         |  80
+
+var student = [
+    {
+        sno:1,
+        Hindi:80
+    },
+    {
+        sno:2,
+        English:80
+    },
+    {
+        sno:3,
+        Hindi:80,
+        Computer:80
+    }
+]
+
+SQl          No SQL 
+Database     Database
+Tables       Collections
+Row          document
+
+Select       Find
+insert       insert
+update       update
+delete       remove
+
+
+Local
+> https://www.mongodb.com/try/download/community
+> in c drive create one folder by the name of data
+> inside data create folder name db 
+> c:/data/db
+
+# 1st Cmd  (start mongodb server)
+-----------------
+> open cmd 
+> go inside mongodb folder
+> cd c:/program/mongodb/server/4.4/bin (go to the bin folder with cmd )
+> type mongod 
+> it will start mongodb server on port 27017
+
+#2nd Cmd (start mongodb console)
+-------------
+> go inside mongodb bin folder
+> type mongo
+
+Cloud
+> https://www.mongodb.com/cloud/atlas
