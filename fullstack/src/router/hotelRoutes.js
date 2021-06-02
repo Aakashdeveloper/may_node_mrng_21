@@ -1,7 +1,9 @@
 var express = require('express')
 var hotelRouter = express.Router();
 var mongodb = require('mongodb').MongoClient;
-var url = "mongodb://127.0.0.1:27017"
+//var url = "mongodb://127.0.0.1:27017"
+var url = "mongodb+srv://dev:test123@cluster0.f8vmc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+//var url  =process.env.monogourl
 
 function router(menu){
 
@@ -16,6 +18,7 @@ function router(menu){
 					if(err){
 						res.status(501).send("Error while fetching")
 					}else{
+						//res.send(data)
 						res.render('hotel',{title:'Hotels Page',hotelData:data,menu})
 					}
 				})

@@ -55,6 +55,7 @@ cityRouter.route('/')
     .get(function(req,res){
 		//res.send(city)
 		res.render('city',{title:'City Page'})
+		res.render('hotel', {title:'Hotels Page', hotelData:hotels})
     })
 
 cityRouter.route('/details')

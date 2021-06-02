@@ -23,3 +23,5 @@ _id> primary key
 > db.test.insert({_id:1,name:"Bhumika",class:"Node"})
 > db.test.insert({_id:2,name:"Karan",class:"UI"})
 > db.test.insert({_id:2,name:"Aakash",class:"Golang"})
+
+///////////
