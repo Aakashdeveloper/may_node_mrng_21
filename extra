@@ -8,10 +8,10 @@ NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
-//////////////////////////////
-Redis  > 6379
-Node-Es6(.babel)
 MongoDb Basic >27017  (local/cloud)
+Redis  > 6379
+//////////////////////////////
+Node-Es6(.babel)
 Api with NodeJS(Rest)>1
 DashBoard(Crud) > 2
 Testing
@@ -216,3 +216,16 @@ mongodb+srv://dev:test123@cluster0.f8vmc.mongodb.net/myFirstDatabase?retryWrites
 
 ///////////////
 npm i express request ejs
+
+//////
+https://redis.io/download
+
+> redis-server
+> redis-cli
+> 6379
+
+> KEYS *
+> set keyname value
+> get keyname
+> del keyname
+> FLUSHAll
