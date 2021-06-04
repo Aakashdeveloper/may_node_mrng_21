@@ -25,3 +25,42 @@ _id> primary key
 > db.test.insert({_id:2,name:"Aakash",class:"Golang"})
 
 ///////////
+update
+//////
+db.test.update(
+    {_id:1},
+    {
+        $set:{
+            class:'React'
+        }
+    }
+)
+
+////
+db.test.remove({})   // remove all records
+db.test.remove({_id:1})
+
+
+
+//////
+select * from hotels where city="Chandigrah"
+db.hotels.find({"city":"Chandigarh"}).pretty()
+
+
+////Projection
+select name,ratingg from hotels where city="Chandigrah"
+
+//db.hotels.find({query},{projection}).pretty()
+
+db.hotels.find({"city":"Chandigarh"},{name:1,rating_text:1,_id:0}).pretty()
+
+db.hotels.find({},{name:1,rating_text:1,_id:0}).pretty()
+
+
+db.hotels.find({"city":"Chandigarh","rating":4},{name:1,rating_text:1,_id:0}).pretty()
+
+
+db.hotels.find({"city":"Chandigarh","aggregate_rating":{$gt:"4"}},{name:1,rating_text:1,_id:0}).pretty()
+
+
+db.hotels.find({"city":"Chandigarh"},{name:1,aggregate_rating:1,_id:0}).sort({aggregate_rating:-1})

@@ -10,8 +10,8 @@ NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
 MongoDb Basic >27017  (local/cloud)
 Redis  > 6379
-//////////////////////////////
 Node-Es6(.babel)
+//////////////////////////////
 Api with NodeJS(Rest)>1
 DashBoard(Crud) > 2
 Testing
@@ -229,3 +229,22 @@ https://redis.io/download
 > get keyname
 > del keyname
 > FLUSHAll
+
+
+////////
+@babel/core
+@babel/preset-env
+@babel/register
+
+npm i @babel/core @babel/preset-env @babel/register
+
+//////////////
+Crud
+
+C > Create   (Post)
+R > Read     (Get)
+U > Update   (Put)
+D > Delete   (Delete)
+
+npm i body-parser cors ejs express mongodb
+npm i chai chai-http mocha
