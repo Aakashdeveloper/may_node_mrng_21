@@ -11,6 +11,7 @@ Third Party Api (Weather Api)
 MongoDb Basic >27017  (local/cloud)
 Redis  > 6379
 Node-Es6(.babel)
+Paytm-Payment
 //////////////////////////////
 Api with NodeJS(Rest)>1
 DashBoard(Crud) > 2
@@ -248,3 +249,11 @@ D > Delete   (Delete)
 
 npm i body-parser cors ejs express mongodb
 npm i chai chai-http mocha
+
+
+
+cors > cross origin resource sharing
+
+
+nodeJs  >  ReactJs
+9700       3000
