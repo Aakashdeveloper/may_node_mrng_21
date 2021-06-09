@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node apiWithOutUi.js",
-    "dev":"nodemon apiWithOutUi.js"
+    "start":"node apiWithUi.js",
+    "dev":"nodemon apiWithUi.js",
+    "api": "nodemon apiWithOutUi.js",
+    "test": "mocha --timeout 10000"
   },
   "author": "",
   "license": "ISC",

@@ -12,13 +12,14 @@ MongoDb Basic >27017  (local/cloud)
 Redis  > 6379
 Node-Es6(.babel)
 Paytm-Payment
-//////////////////////////////
 Api with NodeJS(Rest)>1
-DashBoard(Crud) > 2
+DashBoard(Crud)
 Testing
+//////////////////////////////
 Login/Logout(JWT)
 Oauth(with github)
 ImageUpload
+
 Oauth(with google)
 Github
 --Deployment---
