@@ -19,7 +19,6 @@ Testing
 Login/Logout(JWT)
 Oauth(with github)
 ImageUpload
-
 Oauth(with google)
 Github
 --Deployment---
@@ -258,3 +257,5 @@ cors > cross origin resource sharing
 
 nodeJs  >  ReactJs
 9700       3000
+
+npm i bcryptjs body-parser cors express jsonwebtoken mongoose
