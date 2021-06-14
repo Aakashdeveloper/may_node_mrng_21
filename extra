@@ -15,23 +15,23 @@ Paytm-Payment
 Api with NodeJS(Rest)>1
 DashBoard(Crud)
 Testing
-//////////////////////////////
 Login/Logout(JWT)
 Oauth(with github)
-ImageUpload
 Oauth(with google)
+ImageUpload
+//////////////////////////////
+Email With Node(sendgird)(https://app.sendgrid.com/)
+NodeJs with postgres
+GraphQl API
+
 Github
 --Deployment---
 Nginx
 Pm2
 Docker
 Heroku
----------------------
 OO_NodeJs
-NodeJs with postgres
-GraphQl API
 Chatapp
-Email With Node(sendgird)(https://app.sendgrid.com/)
 FIREBASE(0PTIONAL)
 --------NOT---------
 React/Angular
@@ -259,3 +259,8 @@ nodeJs  >  ReactJs
 9700       3000
 
 npm i bcryptjs body-parser cors express jsonwebtoken mongoose
+
+
+a509983d532b0f8320f1
+
+http://www.passportjs.org/docs/google/
