@@ -19,18 +19,18 @@ Login/Logout(JWT)
 Oauth(with github)
 Oauth(with google)
 ImageUpload
-//////////////////////////////
 Email With Node(sendgird)(https://app.sendgrid.com/)
 NodeJs with postgres
+OO_NodeJs
+//////////////////////////////
 GraphQl API
-
 Github
 --Deployment---
 Nginx
 Pm2
 Docker
 Heroku
-OO_NodeJs
+
 Chatapp
 FIREBASE(0PTIONAL)
 --------NOT---------
