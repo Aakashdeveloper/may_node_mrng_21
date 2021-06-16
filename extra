@@ -22,9 +22,9 @@ ImageUpload
 Email With Node(sendgird)(https://app.sendgrid.com/)
 NodeJs with postgres
 OO_NodeJs
-//////////////////////////////
 GraphQl API
 Github
+//////////////////////////////
 --Deployment---
 Nginx
 Pm2
@@ -264,3 +264,11 @@ npm i bcryptjs body-parser cors express jsonwebtoken mongoose
 a509983d532b0f8320f1
 
 http://www.passportjs.org/docs/google/
+
+
+npm i axios express express-graphql graphql
+
+///dummy api////
+npm i -g json-server 
+
+json-server --watch db.json --port 9800
