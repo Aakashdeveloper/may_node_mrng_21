@@ -24,13 +24,12 @@ NodeJs with postgres
 OO_NodeJs
 GraphQl API
 Github
-//////////////////////////////
 --Deployment---
 Nginx
 Pm2
 Docker
 Heroku
-
+/////////
 Chatapp
 FIREBASE(0PTIONAL)
 --------NOT---------
@@ -272,3 +271,10 @@ npm i axios express express-graphql graphql
 npm i -g json-server 
 
 json-server --watch db.json --port 9800
+
+///////////////////
+npm i -g pm2
+
+
+/////
+npm i -g firebase-tools
