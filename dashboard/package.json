@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node apiWithUi.js",
-    "dev":"nodemon apiWithUi.js",
+    "start": "node apiWithOutUi.js",
+    "dev": "nodemon apiWithOutUi.js",
     "api": "nodemon apiWithOutUi.js",
     "test": "mocha --timeout 10000"
   },
@@ -18,7 +18,12 @@
     "cors": "^2.8.5",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "lowdb": "^2.1.0",
     "mocha": "^8.4.0",
-    "mongodb": "^3.6.9"
+    "mongodb": "^3.6.9",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.1.23",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
   }
 }

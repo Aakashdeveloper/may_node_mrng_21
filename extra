@@ -29,9 +29,8 @@ Nginx
 Pm2
 Docker
 Heroku
-/////////
 Chatapp
-FIREBASE(0PTIONAL)
+FIREBASE
 --------NOT---------
 React/Angular
 Html/css/jquery
@@ -278,3 +277,13 @@ npm i -g pm2
 
 /////
 npm i -g firebase-tools
+
+
+
+//vs extensions
+autoClose tag
+vscodeicons
+githistory
+gitlens
+eslint
+tabnine

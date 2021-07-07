@@ -5,7 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node start.js",
-    "dev": "nodemon start.js"
+    "dev": "nodemon start.js",
+    "commit": "git-cz",
+    "prettier:check": "prettier --check '*.{js,mdx}'",
+    "validate": "run-s test lint prettier:check",
+    "prerelease": "git checkout master && git pull origin master && npm i && run-s validate styleguide:build && git-authors-cli && git add .",
+    "release": "standard-version -a",
+    "postrelease": "run-s release:*",
+    "release:tags": "git push --follow-tags origin master",
+    "release:github": "conventional-github-releaser -p angular",
+    "ci:validate": "rm -rf node_modules && npm ci && npm run validate"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +23,19 @@
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
     "@babel/register": "^7.13.16",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "commitizen": "^4.2.4",
+    "conventional-github-releaser": "^3.1.5",
     "ejs": "^3.1.6",
+    "eslint": "^7.29.0",
     "express": "^4.17.1",
-    "request": "^2.88.2"
+    "git-authors-cli": "^1.0.34",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.1",
+    "request": "^2.88.2",
+    "standard-version": "^9.3.0"
   }
 }

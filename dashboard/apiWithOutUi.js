@@ -8,10 +8,20 @@ const cors = require('cors');
 const mongourl = "mongodb://localhost:27017";
 let db;
 let col_name = "dashboard"
+const swaggerUi = require('swagger-ui-express');
+const package = require('./package.json');
+const swaggerDocument = require('./swagger.json');
+
+swaggerDocument.info.version = package.version;
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json());
 app.use(cors())
+
+app.get('/health',(req,res)=>{
+    res.status(200).send('Health Check')
+});
 
 app.get('/health',(req,res)=>{
     res.status(200).send('Health Check')

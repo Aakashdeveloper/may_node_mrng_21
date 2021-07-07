@@ -3,6 +3,7 @@ import request from 'request';
 const app = express()
 const port = process.env.PORT ||  7800;
 
+//testing code
 app.use(express.static(__dirname+'/public'));
 app.set('views', './src/views');
 app.set('view engine','ejs');
