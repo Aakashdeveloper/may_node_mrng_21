@@ -60,6 +60,173 @@
           }
         }
       }
+    },
+    "/user/{id}": {
+      "summary": "Getting Particular User Info",
+      "get": {
+        "description": "Getting User Info",
+        "tags": ["PUBLIC ROUTE"],
+        "parameters": [
+          {
+            "in": "path",
+            "name":"id",
+            "schema": {
+              "type":"string"
+            },
+            "required":true,
+            "description": "Id of the user"
+          }
+        ],
+        "responses":{
+          "200": {
+            "description": "Getting User Info"
+          }
+        }
+      }
+    },
+    "/addUser": {
+      "summary": "Add new user",
+      "post": {
+        "description": "Add new user",
+        "tags": ["PUBLIC ROUTE"],
+        "requestBody": {
+          "required":true,
+          "content":{
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "id":"string"
+              },
+              "example": {
+                  "name": "Aakash",
+                  "city": "London",
+                  "phone": "99999",
+                  "role": "Admin",
+                  "isActive": true
+              }
+            }
+          }
+
+        },
+        "responses":{
+          "200": {
+            "description": "User Added"
+          }
+        }
+      }
+    },
+    "/updateUser": {
+      "summary": "Update user",
+      "put": {
+        "description": "Update user",
+        "tags": ["PUBLIC ROUTE"],
+        "requestBody": {
+          "required":true,
+          "content":{
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "id":"string"
+              },
+              "example": {
+                  "_id": "60c018a4e9942b52b2878a40",
+                  "name": "Aakash",
+                  "city": "London",
+                  "phone": "99999",
+                  "role": "Admin",
+                  "isActive": true
+              }
+            }
+          }
+
+        },
+        "responses":{
+          "200": {
+            "description": "User Updated"
+          }
+        }
+      }
+    },
+    "/deleteUser": {
+      "summary": "Delete User",
+      "delete": {
+        "description": "Delete User",
+        "tags": ["PUBLIC ROUTE"],
+        "requestBody": {
+          "required":true,
+          "content":{
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "id":"string"
+              },
+              "example": {
+                  "_id": "60c018a4e9942b52b2878a40"
+              }
+            }
+          }
+
+        },
+        "responses":{
+          "200": {
+            "description": "User Deleted"
+          }
+        }
+      }
+    },
+    "/deactivateUser": {
+      "summary": "Deactivate User",
+      "put": {
+        "description": "Deactivate User",
+        "tags": ["PUBLIC ROUTE"],
+        "requestBody": {
+          "required":true,
+          "content":{
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "id":"string"
+              },
+              "example": {
+                "_id":"60c018a4e9942b52b2878a40"
+              }
+            }
+          }
+
+        },
+        "responses":{
+          "200": {
+            "description": "User Deactivated"
+          }
+        }
+      }
+    },
+    "/activateUser": {
+      "summary": "Activate User",
+      "put": {
+        "description": "Activate User",
+        "tags": ["PUBLIC ROUTE"],
+        "requestBody": {
+          "required":true,
+          "content":{
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "id":"string"
+              },
+              "example": {
+                "_id":"60c018a4e9942b52b2878a40"
+              }
+            }
+          }
+
+        },
+        "responses":{
+          "200": {
+            "description": "Activate User"
+          }
+        }
+      }
     }
   }
 }

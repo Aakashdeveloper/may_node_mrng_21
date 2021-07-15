@@ -49,7 +49,9 @@ app.get('/users',(req,res) => {
 
 //userDetails
 app.get('/user/:id',(req,res) => {
+    console.log(">>>>>id1",req.params.id)
     var id = mongo.ObjectID(req.params.id)
+    console.log(">>>>>id2",id)
     db.collection(col_name).find({_id:id}).toArray((err,result)=>{
         if(err) throw err;
         res.send(result)
